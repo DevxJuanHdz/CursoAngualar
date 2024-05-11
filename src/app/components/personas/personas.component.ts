@@ -9,5 +9,8 @@ import { PersonaComponent } from '../persona/persona.component';
   styleUrl: './personas.component.css'
 })
 export class PersonasComponent {
-
+  
+  //Ejercicio: Property Binding
+  //Prodiedad
+  deshabilitar = true; //Es (true) o (false) dependiendo para activar o deshabilitar el boton
 }
