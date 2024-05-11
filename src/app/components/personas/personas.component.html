@@ -8,6 +8,9 @@
       </button>
       <p>{{ mensaje }}</p>
       <app-persona></app-persona>
+      <label>Titulo Persona</label>
+      <!--Capturamos el evento de tipo input (capturar toda info dentro del input) con ayuda del metodo modificar a tarves de la variable $event-->
+      <input type="text" class="form-control" (input)='modificarTitulo($event)'> {{titulo}}
     </div>
   </div>
 </div>
