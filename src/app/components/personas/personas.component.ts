@@ -9,8 +9,12 @@ import { PersonaComponent } from '../persona/persona.component';
   styleUrl: './personas.component.css'
 })
 export class PersonasComponent {
-  
-  //Ejercicio: Property Binding
-  //Prodiedad
-  deshabilitar = true; //Es (true) o (false) dependiendo para activar o deshabilitar el boton
+  deshabilitar = false;
+  //Mensaje que saldra por default
+  mensaje = 'No se ha agregado ninguna persona';
+  //Metodo agregarPersona()
+  agregarPersona(){
+  //Mensaje que saldra dar click al boton
+  this.mensaje = 'Persona agregada'
+  }
 }

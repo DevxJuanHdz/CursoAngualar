@@ -2,8 +2,11 @@
   <div class="row">
     <div class="col">
       <h1>Listado de Personas</h1>
-      <!--Para aplicar el concepto de Property Binding ubicamos entre corchetes la propiedad y le asociamos el atributo de deshabilitar (asi el valor de deshabilitar se lo estamos asignando al disable)-->
-      <button class="btn btn-primary" [disabled]="deshabilitar">Agregar Persona</button>
+      <!--Ejercicio: Event Binding ----- en angular se escribe directamente el nombre del evento (en este caso "click" y posterior se le asigna un metodo)-->
+      <button class="btn btn-primary" [disabled]="deshabilitar" (click)='agregarPersona()'>
+        Agregar Persona
+      </button>
+      <p>{{ mensaje }}</p>
       <app-persona></app-persona>
     </div>
   </div>
